@@ -32,6 +32,27 @@ namespace Zadanie1
 
             Console.WriteLine("Podaj numer telefonu: ");
             os.nrTelefonu = Console.ReadLine();
+
+            // gwiazdki początkowe 
+            for (int i = 0; i < 30; i++) Console.Write("*");
+            Console.WriteLine();
+            // imie + nazwisko
+            Console.Write("* " + os.imie + " " + os.nazwisko + " *");
+            Console.WriteLine();
+            // adres
+            Console.Write("* e-mail: " + os.adresEmail + " *");
+            Console.WriteLine();
+            // telefon
+            Console.Write("* tel. " + os.nrTelefonu + " *");
+            Console.WriteLine();
+
+            //gwiazdki końcowe
+            for (int i = 0; i < 30; i++) Console.Write("*");
+            Console.WriteLine();
+            // Console.WriteLine(new string( '*', 30));
+
+            Console.ReadKey();
+
         }
     }
 }
